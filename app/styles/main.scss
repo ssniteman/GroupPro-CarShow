@@ -1,91 +1,71 @@
-$icon-font-path: "/bower_components/sass-bootstrap/fonts/";
+@import 'compass/css3';
 
-@import 'sass-bootstrap/lib/bootstrap';
-
-.browsehappy {
-    margin: 0.2em 0;
-    background: #ccc;
-    color: #000;
-    padding: 0.2em 0;
-}
-
-/* Space out content a bit */
 body {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    margin: 0 auto;
+    background-color: #E7E9E3;
 }
 
-/* Everything but the jumbotron gets side spacing for mobile first views */
-.header,
-.marketing,
-.footer {
-    padding-left: 15px;
-    padding-right: 15px;
+.container {
+    width: 960px;
+    margin: 0 auto;
 }
 
-/* Custom page header */
+
 .header {
-    border-bottom: 1px solid #e5e5e5;
+    background-color: rgb(25,29,51);
+    height: 90px;
+    // position: fixed;
+  background: #232733; /* Old browsers */
+background: -moz-linear-gradient(top,  #232733 0%, #4d5359 98%); /* FF3.6+ */
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#232733), color-stop(98%,#4d5359)); /* Chrome,Safari4+ */
+background: -webkit-linear-gradient(top,  #232733 0%,#4d5359 98%); /* Chrome10+,Safari5.1+ */
+background: -o-linear-gradient(top,  #232733 0%,#4d5359 98%); /* Opera 11.10+ */
+background: -ms-linear-gradient(top,  #232733 0%,#4d5359 98%); /* IE10+ */
+background: linear-gradient(to bottom,  #232733 0%,#4d5359 98%); /* W3C */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#232733', endColorstr='#4d5359',GradientType=0 ); /* IE6-9 */
 
-    /* Make the masthead heading the same height as the navigation */
-    h3 {
-        margin-top: 0;
-        margin-bottom: 0;
-        line-height: 40px;
-        padding-bottom: 19px;
-    }
 }
 
-/* Custom page footer */
-.footer {
-    padding-top: 19px;
-    color: #777;
-    border-top: 1px solid #e5e5e5;
+.logodiv {
+    width: 365px;
+    padding-top: 15px;
+    display: inline-block;
 }
 
-.container-narrow > hr {
-    margin: 30px 0;
+
+.logo {
+     font-size: 22px;
+    font-family: 'Bowlby One', cursive;
+    color: rgb(247,51,57);
+    letter-spacing: 2px;
+    text-shadow: .5px 1px 1px #E7E9E3;
 }
 
-/* Main marketing message and sign up button */
-.jumbotron {
-    text-align: center;
-    border-bottom: 1px solid #e5e5e5;
-    .btn {
-        font-size: 21px;
-        padding: 14px 24px;
-    }
+.tagline {
+   font-size: 14px;
+    padding-left: 50px;
+    letter-spacing: 1px;
+    color: #E7E9E3;
 }
 
-/* Supporting marketing content */
-.marketing {
-    margin: 40px 0;
-    p + h4 {
-        margin-top: 28px;
-    }
+.tabs {
+    display: inline-block;
+    margin-left: 65px;
 }
 
-/* Responsive: Portrait tablets and up */
-@media screen and (min-width: 768px) {
-    .container {
-        max-width: 730px;
-    }
-
-    /* Remove the padding we set earlier */
-    .header,
-    .marketing,
-    .footer {
-        padding-left: 0;
-        padding-right: 0;
-    }
-
-    /* Space out the masthead */
-    .header {
-        margin-bottom: 30px;
-    }
-    
-    /* Remove the bottom border on the jumbotron for visual effect */
-    .jumbotron {
-        border-bottom: 0;
-    }
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    border-right: 1px solid #E7E9E3;
+    color: #E7E9E3;
+    font-size: 14px;
+    padding-right: 5px;
+    font-size: 14px;
 }
+
+.contact {
+    border-right: 0px;
+}
+
+
+// font-family: 'Open Sans', sans-serif;
