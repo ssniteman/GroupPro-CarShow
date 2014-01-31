@@ -1,4 +1,3 @@
-console.log('\'Allo \'Allo!');
 
 $( ".tabs" ).click(function() {
   $(".reg-form").toggle( );
@@ -42,4 +41,3 @@ new Registrant(nameValue, phoneNumber, emailValue, cityValue, stateValue, zipVal
 //   $('body').append(betterTemplate(user));
 // });
  
-
