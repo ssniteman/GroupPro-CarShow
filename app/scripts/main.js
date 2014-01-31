@@ -1,7 +1,22 @@
 
-$( ".tabs" ).click(function() {
-  $(".reg-form").toggle( );
+$( ".reg-tabs" ).click(function() {
+  $(".reg-form").toggle();
 });
+
+
+// $(".reg-tabs").hover(function() {
+// 	$(this).addClass('newcolor');
+// });
+
+
+$('.reg-tabs').mouseenter(function(){
+	$(this).addClass('newcolor');
+});
+
+$('.reg-tabs').mouseleave(function(){
+	$(this).removeClass('newcolor');
+});
+
 
 $ ("#submit-btn").click(function() {
 	var nameValue = $('input[name=Name]').val();
