@@ -27,6 +27,7 @@
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
+
         <div class="header">
             <div class="container">
                 <div class="logodiv">
@@ -46,7 +47,52 @@
         </div>
         <div class="userpics">
         </div>
-        
+        <form class="reg-form">
+            <div class="container">
+                <div class="field-label">
+                    <div>Full Name</div>
+                    <input type="text" name="Name" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>Phone Number</div>
+                    <input type="text" name="Phone" size="12" value="">
+                </div>
+                <div class="field-label">
+                    <div>Email Address</div>
+                    <input type="text" name="Email" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>City</div>
+                    <input type="text" name="City" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>State</div>
+                    <input type="text" name="State" size="2" value="">
+                </div>
+                <div class="field-label">
+                    <div>Zip Code</div>
+                    <input type="text" name="Zip" size="5" value="">
+                </div>
+                <div class="field-label"> 
+                    <div>Vehicle Year</div>
+                    <input type="text" name="Year" size="10" value="">
+                </div>
+                <div class="field-label"> 
+                    <div>Vehicle Make</div>
+                    <input type="text" name="Make" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>Vehicle Model</div>
+                    <input type="text" name="Model" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>Image Upload</div>
+                    <input type="file" name="Image" size="50" value="">
+                </div>
+                <div class="field-label">
+                    <div>     </div>
+                    <input type="button" class="btn btn-primary btn-large" id="submit-btn" value="Submit Registration">
+        </form>
         <div class="footer">
             <div class="containertwo">
                 <div class="footerinfo">
@@ -56,15 +102,27 @@
                         <li>Email: 'merica.fyeah@gmail.com </li>
                         <li>Address: Pabst Road, Belton SC, 29214</li>
                     </ul>
+
                 </div>
             </div>
         </div>
+    
+        
+
+        <script class="better-template" type="text/template">
+            <div class="user">
+                <img src="<%= image %>">
+                <span class="username"><%= username %></span>
+                <span class="name"><%= name %></span>
+            </div>
+        </script>
 
 
 
         <!-- build:js scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="bower_components/jquery/jquery.js"></script>  <script src="bower_components/underscore/underscore.js"></script>
+        <script src="bower_components/jquery/jquery.js"></script>  
+        <script src="bower_components/underscore/underscore.js"></script>
         <!-- endbower -->
         <!-- endbuild -->
 
