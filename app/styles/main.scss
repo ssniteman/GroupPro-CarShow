@@ -9,6 +9,12 @@ body {
 
 .container {
     width: 960px;
+    margin: 0 198px;
+    height: 120px;
+}
+
+.containerthree {
+    width: 960px;
     margin: 0 auto;
 }
 
@@ -118,13 +124,12 @@ ul li {
     font-size: 32px;
     font-family: open sans;
     font-weight: 600px;
-    text-align: center;
+    margin-left: 68px;
     margin-top: 40px;
-    color: rgb(102, 54, 54)
+    color: rgb(107, 49, 51);
 }
 .registered-users {
     width: 960px;
-    height: 2000px;
     position: relative;
     margin: 0 auto;
     z-index: 0;
@@ -157,7 +162,7 @@ ul li {
 // Footer
 
 .footer {
-    background-color: rgb(21,21,21);
+    // background-color: rgb(21,21,21);
     height: 100px;
     width: 100%;
 }
@@ -167,12 +172,20 @@ ul li {
 }
 
 .footercontact {
-    margin: 95px;
     padding-top: 80px;
     color: rgb(85,89,97);
+    width: 960px;
 }
 
 .contactinfo {
     border-right: 0px;
+    margin-left: 15px;
 }
 
+.address {
+    border-right: 0px;
+}
+
+.sponsor-nitro {
+    margin-left: 25px;
+}

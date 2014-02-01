@@ -37,10 +37,9 @@ $ ("#submit-btn").click(function() {
 	var RegistrantTemplate = _.template ($('.RegistrantTemplate').text());
 
 
-	$('body').append(RegistrantTemplate({data: registrant}))
+	$('.registered-users').append(RegistrantTemplate({data: registrant}))
 
 })
-
 
 
 function Registrant (name, phone, email, city, state, zip, year, make, model, image) {
