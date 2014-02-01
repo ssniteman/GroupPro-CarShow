@@ -35,6 +35,7 @@ body {
     height: 120px;
     width: 1500px;
     position: fixed;
+    z-index: 1;
 }
 
 .logodiv {
@@ -126,6 +127,7 @@ ul li {
     height: 2000px;
     position: relative;
     margin: 0 auto;
+    z-index: 0;
 }
 .new-register {
     width: 316px;
