@@ -167,17 +167,26 @@
         </div>
     
         
+<<<<<<< HEAD
 
         <script class="RegistrantTemplate" type="text/template">
             <div class="new-register">
-                <img class="car-image"src="<%= data.image %>">
-                <div class="name"><%= data.name %></div>
-                <div class="year"><%= data.year %></div>
-                <div class="make"><%= data.make %></div>
-                <div class="model"><%= data.model %></div>
+                <img class="car-image"src="<%= image %>">
+                <div class="name"><%= name %></div>
+                <div class="year"><%= year %></div>
+                <div class="make"><%= make %></div>
+                <div class="model"><%= model %></div>
+=======
+<!-- 
+        <script class="better-template" type="text/template">
+            <div class="user">
+                <img src="<%= image %>">
+                <span class="username"><%= username %></span>
+                <span class="name"><%= name %></span>
+>>>>>>> be1e3d0d9c5cc893fc0ecda8b9b754ffaddc21ef
             </div>
         </script>
-
+ -->
 
 
         <!-- build:js scripts/vendor.js -->
