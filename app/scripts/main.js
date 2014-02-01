@@ -3,6 +3,9 @@ $( ".tabs" ).click(function() {
   $(".reg-form").toggle( );
 });
 
+
+
+
 $ ("#submit-btn").click(function() {
 	var nameValue = $('input[name=Name]').val();
 	var phoneNumber = $('input[name=Phone]').val();
@@ -34,10 +37,9 @@ function Registrant (name, phone, email, city, state, zip, year, make, model, im
 
 new Registrant(nameValue, phoneNumber, emailValue, cityValue, stateValue, zipValue, yearValue, makeValue, modelValue, CarImage)
 
+var RegistrantTemplate = _.template ($('.RegistrantTemplate').text());
 
-// var betterTemplate = _.template(  );
 
-// _.each(userData, function(user, index){
-//   $('body').append(betterTemplate(user));
-// });
+$('body').append(RegistrantTemplate())
+
  
