@@ -3,11 +3,11 @@ $( ".reg-tabs" ).click(function() {
   $(".reg-form").toggle();
 });
 
+$("#submit-btn").click(function(){
+	 $(".reg-form").toggle();
+})
 
 
-// $(".reg-tabs").hover(function() {
-// 	$(this).addClass('newcolor');
-// });
 
 
 $('.reg-tabs').mouseenter(function(){
@@ -31,6 +31,10 @@ $ ("#submit-btn").click(function() {
 	var makeValue = $('input[name=Make]').val();
 	var modelValue = $('input[name=Model]').val();
 	var CarImage = $('input[name=Image]').val();
+
+	if (yearValue > 1969){
+      alert('Please note, The Junkyard Auto Show only allows vehicle models prior to 1970 to be exhibited.')
+    }
 
 	var registrant = new Registrant(nameValue, phoneNumber, emailValue, cityValue, stateValue, zipValue, yearValue, makeValue, modelValue, CarImage);
 
