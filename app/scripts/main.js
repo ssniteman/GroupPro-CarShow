@@ -33,8 +33,12 @@ $ ("#submit-btn").click(function() {
 	var CarImage = $('input[name=Image]').val();
 
 	if (yearValue > 1969){
-      alert('Please note, The Junkyard Auto Show only allows vehicle models prior to 1970 to be exhibited.')
+      alert('Please note, The Junkyard Auto Show only allows vehicle models prior to 1970 to be exhibited. Try again in 20 years.');
+      $('.reg-form').trigger("reset");
+      return false;
     }
+    else
+    {
 
 	var registrant = new Registrant(nameValue, phoneNumber, emailValue, cityValue, stateValue, zipValue, yearValue, makeValue, modelValue, CarImage);
 
@@ -43,7 +47,11 @@ $ ("#submit-btn").click(function() {
 
 	$('.registered-users').append(RegistrantTemplate({data: registrant}))
 
-})
+	$('.reg-form').trigger("reset");
+    }	
+	})
+
+
 
 
 function Registrant (name, phone, email, city, state, zip, year, make, model, image) {
