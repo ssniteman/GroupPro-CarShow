@@ -3,7 +3,9 @@ $( ".reg-tabs" ).click(function() {
   $(".reg-form").toggle();
 });
 
-
+$("#submit-btn").click(function(){
+	$(".reg-form").toggle();
+})
 
 // $(".reg-tabs").hover(function() {
 // 	$(this).addClass('newcolor');
@@ -37,7 +39,7 @@ $ ("#submit-btn").click(function() {
 	var RegistrantTemplate = _.template ($('.RegistrantTemplate').text());
 
 
-	$('body').append(RegistrantTemplate({data: registrant}))
+	$('.registered-users').append(RegistrantTemplate({data: registrant}))
 
 })
 
@@ -53,9 +55,7 @@ function Registrant (name, phone, email, city, state, zip, year, make, model, im
 	this.make = make;
 	this.model = model;
 	this.image = image;
-}
-
-
+};
 
 
  

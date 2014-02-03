@@ -87,8 +87,8 @@
                     <input type="text" name="Model" size="50" value="">
                 </div>
                 <div class="field-label">
-                    <div>Image Upload</div>
-                    <input type="file" name="Image" size="50" value="">
+                    <div>Image Upload - (cut and paste url)</div>
+                    <input type="" name="Image" size="50" value="">
                 </div>
                 <div class="field-label">
                     <div>     </div>
@@ -169,12 +169,14 @@
         
 
         <script class="RegistrantTemplate" type="text/template">
+            <div class="registered-users">
             <div class="new-register">
                 <img class="car-image"src="<%= data.image %>">
                 <div class="name"><%= data.name %></div>
                 <div class="year"><%= data.year %></div>
                 <div class="make"><%= data.make %></div>
                 <div class="model"><%= data.model %></div>
+            </div>
             </div>
         </script>
 
